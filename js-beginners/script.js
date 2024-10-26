@@ -187,3 +187,47 @@ if (a < b) {
 } else {
   console.log(`${a} and ${b} are equal.`);
 }
+
+//Numbers Comparison
+let cA = 5;
+let cB = 7;
+let cC = 5;
+
+console.log(cA == cB); //checks if both variables are equal
+console.log(cA != cC); //checks if both variables are not equal
+console.log(cA < cB); //checks if variable A is less than variable B
+console.log(cB > cC); //checks if variable B is greater than variable C
+
+//String Comparison
+let sA = "A"
+let sB = "Z"
+let sC = "Glow"
+let sD = "Glows"
+let sE = "Glow"
+
+console.log(sA == sB); //FALCE b/c A is not equal to Z 
+console.log(sA > sB); //TRUE b/c A is greater than Z
+console.log(sC == sE); //TRUE /bc both variables have exactly the same letters
+console.log(sD > sE); //TRUE b/c the first variable D has longer letters therefore is greater
+
+//COMPARING DIFFERENT DATA TYPES
+console.log("2" == 2); //Numeric strings are converted to numbers during comparison
+console.log(true == 1); //True equals to 1
+console.log(false == 0); //False equals to 2
+
+//STRICT COMPARISONS
+console.log(false === ""); //FALSE comparison is strict as it doesn't convert to number and also compares the data types
+console.log(false == ""); //TRUE comparison is not strict as it converts the empty string to number which equals 0
+
+//Null and Undefined Comparison
+console.log(null == undefined); //TRUE b/c null and undefined only equal each other during equality check and are not converted to numbers
+console.log(null === undefined); //FALSE b/c different data types
+
+console.log(null > 0);  //FALSE b/c null = 0 when converted during comparison
+console.log(null == 0); //FALSE b/c null is not converted to number during equality check
+console.log(null >= 0); //TRUE b/c null is converted to number during comparison and is equal to 0
+
+console.log(undefined > 0); //FALSE b/c undefined is not converted during comparison
+console.log(undefined < 0); //FALSE b/c undefined is not converted during comparison
+console.log(undefined == 0); //FALSE b/c undefined is not converted during equality check
+
