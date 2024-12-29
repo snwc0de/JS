@@ -30,7 +30,11 @@ const buttons = document.querySelectorAll("button");
 
 //each button returns its id
 buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-        alert(button.id);
+    button.addEventListener("click", (e) => {
+        e.target.style.cssText = "color: red; background-color: black"
     });
-})
+    button.addEventListener("dblclick", () => {
+        alert(button.id); 
+    })
+}) 
+
