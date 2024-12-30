@@ -110,7 +110,6 @@ let game = {
 console.log(game[0]);    //"time"
 console.log(game["0"]);  //"time" (same property value)
 
-let lol = [0, 1, ''];
 
 //"IN" OPERATOR, PROPERTY EXISTENCE TEST
 let test = {}
@@ -138,3 +137,28 @@ for (let key in cars) {
     //list out all the property values in the object; BMW, Black, Wagon
 }
 
+
+//ORDER LIKE AN OBJECT
+let league =  {
+    3: "Chelsea",
+    4: "Bournemoth",
+    1: "Liverpool",
+    2: "Notthingham"
+}
+
+for(let position in league) {
+    console.log( position );  //1, 2, 3, 4.
+    console.log( league[position] ); //Liverpool, Nottingham, Chelsea, Bournemouth
+}
+
+league = {
+    "+3": "Chelsea",
+    "+4": "Bournemoth",
+    "+1": "Liverpool",
+    "+2": "Notthingham"
+}
+
+for (let position in league) {
+    console.log( +position );   //3, 4, 1, 2.
+    console.log( league[position] ); //Chelsea, Bournemoth, Liverpool, Nothingham
+};
